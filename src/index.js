@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Spring, config, animated } from 'react-spring'
 import * as Icons from './icons'
 
-const styles = {
+var styles = {
   tree: {
     position: 'relative',
     padding: '4px 0px 0px 0px',
@@ -11,27 +11,28 @@ const styles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     verticalAlign: 'middle',
+    fontSize: "18px"
   },
   toggle: {
     width: '1em',
     height: '1em',
     marginRight: 10,
     cursor: 'pointer',
-    verticalAlign: 'middle',
+    verticalAlign: 'middle'
   },
   type: {
     textTransform: 'uppercase',
     fontFamily: 'monospace',
     fontSize: '0.6em',
-    verticalAlign: 'middle',
+    verticalAlign: 'middle'
   },
   contents: {
     willChange: 'transform, opacity, height',
-    marginLeft: 6,
-    padding: '4px 0px 0px 14px',
-    borderLeft: '1px dashed rgba(255,255,255,0.4)',
-  },
-}
+    marginLeft: 12,
+    padding: '10px 0px 0px 14px',
+    borderLeft: '1px solid lightgrey'
+  }
+};
 
 const Contents = ({ children, ...style }) => (
   <animated.div style={{ ...style, ...styles.contents }}>
