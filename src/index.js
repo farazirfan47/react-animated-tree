@@ -11,7 +11,7 @@ var styles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     verticalAlign: 'middle',
-    fontSize: "18px"
+    fontSize: "15px"
   },
   toggle: {
     width: '1em',
